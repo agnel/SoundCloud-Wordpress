@@ -36,7 +36,7 @@ class SoundcloudWordpress {
 		$this->soundcloud = new Services_Soundcloud(
 			$this->arg1,
 			$this->arg2,
-			$this->redirect_server
+			$this->_redirect_server
 		);
 		
 		/*

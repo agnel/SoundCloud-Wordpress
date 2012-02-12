@@ -18,8 +18,8 @@ function wpsc_handle_wp_footer() {
 	
 	<div id="scwp_container">
 		<div id="scwp_loading_message">
-			<img style="height:16px" src="<?=$img_url;?>" alt="Sound Plugin"/>
-			<img src="<?=$loader_url;?>" alt="Loading data..." />
+			<!--<img style="height:16px" src="<?=$img_url;?>" alt="Sound Plugin"/>-->
+			<!--<img src="<?=$loader_url;?>" alt="Loading data..." />-->
 		</div>
 		<div>
 			<iframe height="400" width="100%" frameborder="0" src="<?=$framesource;?>"></iframe>
@@ -27,7 +27,7 @@ function wpsc_handle_wp_footer() {
 	</div>
 	<script>
 		document.scwp_handle_done_loading = function() {
-			$("#scwp_loading_message").remove();
+			//$("#scwp_loading_message").remove();
 		}
 	</script>
 	

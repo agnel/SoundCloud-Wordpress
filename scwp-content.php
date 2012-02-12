@@ -4,6 +4,10 @@
  */ 
 
 /*-----------------------------------------------------------------------------*/
+ini_set('display_errors', 0);
+ini_set("html_errors", 0);
+
+
 session_start();
 date_default_timezone_set('GMT');
 
