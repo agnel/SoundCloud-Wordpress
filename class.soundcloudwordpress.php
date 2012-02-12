@@ -4,7 +4,7 @@
  */ 
 
 
-require_once __DIR__ . '/Services/Soundcloud.php';
+require_once dirname(__FILE__) . '/Services/Soundcloud.php';
 
 
 class SoundcloudWordpress {
