@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Sound Cloud Wordpress
+Plugin Name: SoundCloud Wordpress
 Plugin URI: n/a
 Description: A simple Sound Cloud plugin for Wordpress
 Version: 1.0
@@ -8,7 +8,7 @@ Author: Richard Caceres
 Author URI: http://rchrd.net
 License: GPL
 */
-function wpsc_handle_wp_footer() {
+function scwp_handle_wp_footer() {
 	
 	$framesource = plugins_url('soundcloud-wordpress/scwp-content.php');
 	$img_url     = plugins_url('soundcloud-wordpress/80x50_orange.png');
@@ -35,5 +35,5 @@ function wpsc_handle_wp_footer() {
 	
 }
 
-add_action('dbx_post_sidebar', 'wpsc_handle_wp_footer');
+add_action('dbx_post_sidebar', 'scwp_handle_wp_footer');
 
