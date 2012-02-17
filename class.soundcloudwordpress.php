@@ -30,7 +30,7 @@ class SoundcloudWordpress {
 		$file_path_parts = parse_url($_SERVER['REQUEST_URI']);
 		$file_path       = $file_path_parts['path'];
 		$url_to_dir      = $protocol . $_SERVER['HTTP_HOST'] . dirname($file_path);
-		$url_to_file     = $protocol . $_SERVER['HTTP_HOST'] . $file_path . '/scwp-content.php';
+		$url_to_file     = rtrim($url_to_dir, '/') . '/scwp-content.php';
 		
 		$this->redirect_url = $url_to_file;
 		$this->soundcloud = new Services_Soundcloud(
