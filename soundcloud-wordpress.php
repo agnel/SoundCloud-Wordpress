@@ -8,11 +8,14 @@ Author: Richard Caceres
 Author URI: http://rchrd.net
 License: GPL
 */
+echo basename(dirname(__FILE__));exit;
+
 function scwp_handle_wp_footer() {
 	
-	$framesource = plugins_url('soundcloud-wordpress/scwp-content.php');
-	$img_url     = plugins_url('soundcloud-wordpress/80x50_orange.png');
-	$loader_url  = plugins_url('soundcloud-wordpress/loader.gif');
+	$curr_dir_name = basename(dirname(__FILE__));
+	$framesource = plugins_url($curr_dir_name . '/scwp-content.php');
+	$img_url     = plugins_url($curr_dir_name . '/80x50_orange.png');
+	$loader_url  = plugins_url($curr_dir_name . '/loader.gif');
 
 	?>
 	
