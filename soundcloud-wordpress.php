@@ -8,8 +8,6 @@ Author: Richard Caceres
 Author URI: http://rchrd.net
 License: GPL
 */
-echo basename(dirname(__FILE__));exit;
-
 function scwp_handle_wp_footer() {
 	
 	$curr_dir_name = basename(dirname(__FILE__));
