@@ -7,4 +7,9 @@ put the "SoundCloud-Wordpress" folder inside the Wordpress plugins folder.
 
 I'm open to contributors to who want to add more functionality and improvements.
 
-Note: Requires PHP 5.3 or greater.
+Important Note: Requires PHP 5.3 or greater.
+
+// Installation
+
+Copy the "soundcloud-wordpress" folder into the "wp-content/plugins" folder and
+activate it in the admin.
