@@ -4,9 +4,14 @@
  */ 
 
 /*-----------------------------------------------------------------------------*/
-ini_set('display_errors', 0);
-ini_set("html_errors", 0);
-
+if(isset($_GET['debug'])) {
+	error_reporting(E_ALL);
+	ini_set('display_errors', 1);
+	ini_set("html_errors", 1);
+} else {
+	ini_set('display_errors', 0);
+	ini_set("html_errors", 0);
+}
 
 session_start();
 date_default_timezone_set('GMT');
@@ -110,7 +115,6 @@ if($scwp->isLoggedIn()) {
 else {
 
 	$authorizeUrl = $scwp->soundcloud->getAuthorizeUrl(array("state" => $scwp->redirect_url));
-	echo $constant_redirect_url;
 	?>
 	<a href="<?php echo $authorizeUrl; ?>"><img src="btn-connect-sc-l.png" alt="Connect with Sound Cloud"/></a>
 	

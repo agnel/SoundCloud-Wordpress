@@ -60,9 +60,9 @@ class SoundcloudWordpress {
 		 */
 		$this->access_token = $access_token_result['access_token'];
 	
-		if( ! isset($_SESSION['accessToken'])) {
-			session_register('accessToken');
-		}
+		// if( ! isset($_SESSION['accessToken'])) {
+		// 	session_register('accessToken');
+		// }
 		$_SESSION['accessToken'] = $this->access_token;
 		
 		$this->_logged_in = true;
